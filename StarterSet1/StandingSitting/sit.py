@@ -1,9 +1,10 @@
-with open('sitin.txt', 'r') as inpt:
-    r, s = [int(x) for x in inpt.readline().split()]
-    tickets = int(inpt.readline())
+with open("sitin.txt", "r") as I:
+    r, s = [int(x) for x in I.readline().split()]
+    tickets = int(I.readline())
     sit = r*s if r*s<=tickets else tickets
     stand = tickets-r*s if r*s<=tickets else 0
-inpt.close()
-with open('sitout.txt', 'w') as otpt:
-    otpt.write(str(sit)+' '+str(stand))
-otpt.close()
+I.close()
+
+with open('sitout.txt', 'w') as O:
+    O.write(str(sit)+' '+str(stand))
+O.close()
