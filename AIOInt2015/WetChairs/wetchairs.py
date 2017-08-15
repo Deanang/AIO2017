@@ -1,5 +1,5 @@
 #Files I/O
-I = open('chairsin.txt', 'r'), O = open('chairsout.txt', 'w')
+I, O = open('chairsin.txt', 'r'), open('chairsout.txt', 'w')
 #Read values of C - No. of chairs, N -No. of friends and K - No.of friends who can sit wet or dry.
 C, N, K = [int(x) for x in I.readline().split()]
 #Read the state of the chairs (wet or dry)
